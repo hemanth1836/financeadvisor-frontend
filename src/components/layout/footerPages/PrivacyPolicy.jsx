@@ -1,5 +1,6 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
+import img2 from "../../../assets/0x0.webp"
 import "./footerStyles.css"
 const PrivacyPolicy = () => {
     const navigate=useNavigate()
@@ -18,7 +19,7 @@ const PrivacyPolicy = () => {
         <section className="row align-items-center gy-4 mb-5 animate__animated animate__fadeInLeft">
           <div className="col-md-6">
             <img
-              src="src\assets\0x0.webp"
+              src={img2}
               alt="Privacy"
               className="img-fluid rounded-4 shadow-lg"
             />

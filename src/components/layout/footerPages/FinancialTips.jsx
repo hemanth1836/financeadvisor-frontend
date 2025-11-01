@@ -1,6 +1,7 @@
 import React from "react";
 import "./footerStyles.css"
 import { useNavigate } from "react-router-dom";
+import img4 from "../../../assets/360_F_464217752_EmtW15jg5kMhwqClmlSohRatlVXrcMop.jpg"
 const FinancialTips = () => {
     const navigate=useNavigate()
   return (
@@ -24,7 +25,7 @@ const FinancialTips = () => {
           </div>
           <div className="col-md-6">
             <img
-              src="src\assets\360_F_464217752_EmtW15jg5kMhwqClmlSohRatlVXrcMop.jpg"
+              src={img4}
               alt="Saving Tips"
               className="img-fluid rounded-4 shadow-lg"
             />

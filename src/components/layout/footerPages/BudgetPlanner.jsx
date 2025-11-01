@@ -2,6 +2,7 @@ import React from "react";
 
 import "./footerStyles.css"
 import { useNavigate } from "react-router-dom";
+import img3 from "../../../assets/budget-1024x617.webp"
 
 const BudgetPlanner = () => {
     const navigate=useNavigate()
@@ -22,7 +23,7 @@ const BudgetPlanner = () => {
         <section className="row align-items-center gy-4 mb-5 animate__animated animate__fadeInLeft">
           <div className="col-md-6">
             <img
-              src="src\assets\budget-1024x617.webp"
+              src={img3}
               alt="Budget Planning"
               className="img-fluid rounded-4 shadow-lg"
             />

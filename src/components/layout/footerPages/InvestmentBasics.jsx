@@ -1,5 +1,6 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
+import img3 from "../../../assets/value-investing-vs-growth-investing.jpg"
 
 import "./footerStyles.css"
 const InvestmentBasics = () => {
@@ -19,7 +20,7 @@ const InvestmentBasics = () => {
         <section className="row align-items-center gy-4 mb-5 animate__animated animate__fadeInLeft">
           <div className="col-md-6">
             <img
-              src="src\assets\value-investing-vs-growth-investing.jpg"
+              src={img3}
               alt="Investment"
               className="img-fluid rounded-4 shadow-lg"
             />

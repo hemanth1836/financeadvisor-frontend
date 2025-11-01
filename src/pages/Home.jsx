@@ -2,6 +2,8 @@ import React from 'react'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'animate.css';
 import './Home.css';
+import img1 from "../assets/MicrosoftTeams-image-4.jpg"
+import img2 from "../assets/inflation-spending-habits-header.jpg"
 import { useNavigate } from 'react-router-dom';
 const Home = () => {
   const navigate=useNavigate()
@@ -71,7 +73,7 @@ const Home = () => {
             <div className="col-md-6">
               <div className="insight-image-wrapper">
                 <img
-                  src="src/assets/MicrosoftTeams-image-4.jpg"
+                  src={img1}
                   alt="AI Insights"
                   className="img-fluid rounded-4 shadow-lg"
                 />
@@ -120,7 +122,7 @@ const Home = () => {
             <div className="col-md-6">
               <div className="visual-image-wrapper">
                 <img
-                  src="src/assets/inflation-spending-habits-header.jpg"
+                  src={img2}
                   alt="Spending Visualization"
                   className="img-fluid rounded-4 shadow-lg"
                 />
