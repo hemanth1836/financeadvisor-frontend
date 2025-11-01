@@ -9,7 +9,7 @@ const History = () => {
 
   useEffect(() => {
     axios
-      .get("http://127.0.0.1:8000/api/history/")
+      .get("https://financeadvisor-backend-kreo.onrender.com/api/history/")
       .then((response) => {
         setHistory(response.data);
         setLoading(false);

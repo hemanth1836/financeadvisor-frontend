@@ -51,8 +51,9 @@ const expenseData = {
 
     console.log("🚀 Sending filtered data to backend:", filteredValues);
 
-   const response = await fetch("http://127.0.0.1:8000/api/predict/", {
-      method: "POST",
+   const response = await fetch(" https://financeadvisor-backend-kreo.onrender.com/api/predict/", {
+      method: "POST", 
+
       headers: {
         "Content-Type": "application/json",
       },
