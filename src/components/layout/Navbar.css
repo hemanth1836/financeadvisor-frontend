@@ -1,0 +1,88 @@
+/* Navbar Container */
+.navbar {
+  background: linear-gradient(90deg, #00b894, #00cec9, #0984e3);
+  padding: 0.5rem 1.2rem; /* compact height */
+  transition: all 0.4s ease-in-out;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Brand Name */
+.navbar-brand {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #ffffff !important;
+  letter-spacing: 0.5px;
+  transition: transform 0.3s ease;
+}
+
+.navbar-brand:hover {
+  transform: scale(1.05);
+}
+
+
+
+/* Navbar Links */
+.nav-link {
+  color: #f8f9fa !important;
+  margin: 0 0.7rem;
+  font-weight: 500;
+  transition: color 0.3s ease, transform 0.2s ease;
+  padding: 0.3rem 0.5rem;
+}
+
+.nav-link:hover {
+  color: #dff9fb !important;
+  transform: translateY(-1px);
+}
+
+/* Active Route Highlight */
+.nav-link.active {
+  border-bottom: 2px solid #ffffff;
+  color: #ffffff !important;
+}
+
+/* Login Button */
+.ant-btn {
+  border-radius: 20px !important;
+  font-weight: 500 !important;
+  background-color: #ffffff !important;
+  color: #00b894 !important;
+  transition: all 0.3s ease-in-out !important;
+  padding: 4px 14px !important;
+  border: none !important;
+}
+
+.ant-btn:hover {
+  background-color: #00cec9 !important;
+  color: #ffffff !important;
+  transform: translateY(-1px);
+}
+
+/* Avatar + Username */
+.d-flex.align-items-center.gap-2 p {
+  color: #ffffff;
+  font-size: 0.9rem;
+  margin: 0;
+}
+
+/* Navbar shrink on scroll */
+.navbar.scrolled {
+  background: linear-gradient(90deg, #0984e3, #00cec9, #00b894);
+  padding: 0.4rem 1rem;
+  transition: all 0.3s ease-in-out;
+}
+
+@media (max-width: 991px) {
+  .navbar-collapse {
+    text-align: center;
+  }
+
+  .navbar-nav {
+    justify-content: center !important;
+  }
+
+  .guest-btn {
+    margin-top: 15px;
+  }
+}
+

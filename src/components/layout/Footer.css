@@ -1,0 +1,49 @@
+.footer {
+  background: linear-gradient(90deg, #00b894, #00cec9, #0984e3);
+  color: #fff;
+  text-align: left;
+  box-shadow: 0 -3px 12px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+}
+
+/* Footer links */
+.footer-link {
+  color: #f1f1f1;
+  text-decoration: none;
+  display: block;
+  margin-bottom: 0.5rem;
+  transition: color 0.3s ease, transform 0.2s ease;
+}
+
+.footer-link:hover {
+  color: #ffffff;
+  transform: translateX(5px);
+}
+
+/* Social icons */
+.social-icon {
+  color: #fff;
+  font-size: 1.4rem;
+  transition: all 0.3s ease-in-out;
+}
+
+.social-icon:hover {
+  color: #dfe6e9;
+  transform: scale(1.25);
+}
+
+/* Equal column width fix */
+.footer .row > div {
+  flex: 1;
+  min-width: 220px;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .footer {
+    text-align: center;
+  }
+  .social-icon {
+    margin: 0 auto;
+  }
+}

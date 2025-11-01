@@ -1,0 +1,91 @@
+/* FinanceForm.css — styles for FinanceForm component */
+
+/* Container / page background */
+.finance-form-container {
+  background: linear-gradient(135deg, #e3f2fd, #ffffff);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 15px;
+}
+
+/* Card */
+.finance-card {
+  width: 100%;
+  max-width: 700px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.95);
+  padding: 35px 40px;
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+}
+
+/* Title & subtitle */
+.finance-title {
+  text-align: center;
+  font-weight: 700;
+  color: #0d47a1;
+  margin-bottom: 10px;
+  font-size: 1.6rem;
+}
+
+.finance-subtitle {
+  text-align: center;
+  color: #555;
+  font-size: 15px;
+  margin-bottom: 30px;
+}
+
+/* Expense section wrapper */
+.expense-section {
+  background: #f5f9ff;
+  padding: 25px;
+  border-radius: 15px;
+  margin-top: 25px;
+}
+
+/* Expense heading */
+.expense-section h3 {
+  text-align: center;
+  color: #1565c0;
+  margin-bottom: 20px;
+}
+
+/* Responsive layout helpers for inner flex groups */
+.flex-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: space-between;
+}
+
+/* Make each Form.Item in flex groups behave responsively */
+.flex-item {
+  flex: 1 1 48%;
+  min-width: 220px; /* ensures two-column layout on wide screens, stacks on narrow */
+}
+
+/* Submit button styling */
+.submit-btn {
+  width: 100%;
+  background: linear-gradient(90deg, #1565c0, #42a5f5);
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(21, 101, 192, 0.4);
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+/* smaller padding on very small devices */
+@media (max-width: 480px) {
+  .finance-card {
+    padding: 20px;
+  }
+  .flex-item {
+    flex-basis: 100%;
+    min-width: 100%;
+  }
+}

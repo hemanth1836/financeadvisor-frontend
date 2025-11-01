@@ -1,0 +1,28 @@
+.contact-page {
+  background: linear-gradient(135deg, #f8fafc, #eef3f8);
+  min-height: 100vh;
+}
+
+.info-card {
+  transition: all 0.3s ease-in-out;
+  background: white;
+}
+
+.info-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.card {
+  background: white;
+}
+
+@media (max-width: 768px) {
+  .contact-page {
+    padding: 2rem 1rem;
+  }
+
+  .info-card {
+    padding: 2rem 1.5rem;
+  }
+}

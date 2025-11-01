@@ -1,0 +1,65 @@
+/* === AI Insights Section === */
+.ai-insights-section {
+  background: linear-gradient(135deg, #e3f2fd, #ffffff);
+}
+
+.insight-text-box {
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 18px;
+  padding: 30px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(8px);
+}
+
+.section-title {
+  font-weight: 700;
+  color: #0d47a1;
+}
+
+.custom-list li {
+  margin-bottom: 8px;
+  font-size: 15px;
+}
+
+/* === Expense Visualization Section === */
+.expense-visual-section {
+  background: linear-gradient(135deg, #bbdefb, #e3f2fd);
+}
+
+.visual-text-box {
+  background: rgba(255, 255, 255, 0.92);
+  border-radius: 18px;
+  padding: 30px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  backdrop-filter: blur(8px);
+}
+
+.explore-btn {
+  background: linear-gradient(90deg, #1565c0, #42a5f5);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 22px;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(21, 101, 192, 0.3);
+  transition: 0.3s ease-in-out;
+}
+
+.explore-btn:hover {
+  background: #0d47a1;
+  transform: translateY(-2px);
+}
+
+/* Image Wrappers */
+.insight-image-wrapper,
+.visual-image-wrapper {
+  text-align: center;
+}
+
+.insight-image-wrapper img,
+.visual-image-wrapper img {
+  border-radius: 18px;
+  width: 100%;
+  height: auto;
+}
