@@ -29,7 +29,7 @@ const Contact = () => {
     }
 
     try {
-      await axios.post("http://127.0.0.1:8000/api/contact/", formData);
+      await axios.post("https://financeadvisor-backend-kreo.onrender.com/api/contact/", formData);
       toast.success("✅ Message sent successfully!");
       setFormData({ name: "", email: "", message: "" }); // clear inputs
     } catch (error) {
